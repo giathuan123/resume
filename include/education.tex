@@ -4,28 +4,50 @@
 % \cvsection{Education}
 \cvsectionIcon{Education}{\faGraduationCap}
 
+\tcbset{
+  colback=awesome-skyblue
+  colframe=white
+  }
+
+\newtcbox{\cbox}[1][awesome-skyblue]{on line,
+arc=3pt,colback=#1!15!white,colframe=white,
+before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
+boxsep=0pt,left=2pt,right=2pt,top=1pt,bottom=.5pt}
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
-
 %---------------------------------------------------------
   \cventry
-    {B.Sc. in Computer Science and Physics} % Degree
-    {University of Western Australia} % Institution
-    {Crawley, WA} % Location
-    {2010 - 2013} % Date(s)
+    {B.Sc. in Computer Science} % Degree
+    {University of California, Riverside} % Institution
+    {Riverside, CA} % Location
+    {Aug, 2020 - Current} % Date(s)
     {
       \begin{cvitems} % Description(s) bullet points
-        \item {Grade Point Average: 4.931}
+        \item {CS GPA: 4:00}
+        \item{UCR Achievement Scholarship for transfers (\$1,500 per quarter )}
+        \item []{
+            \textbf{Relevant Coursework} 
+            \begin{itemize}
+              \item[\bullet]{\cbox{Database Management Systems}}
+              \item[\bullet]{\cbox{Design of Operating Systems}}
+              \item[\bullet]{\cbox{Compiler Design}}
+              \item[\bullet]{\cbox{Intro. to AI}}
+            \end{itemize}
+          }
       \end{cvitems}
     }
   % \cventry
-  %   {Western Australian Certificate of Education} % Degree
-  %   {Shenton College} % Institution
-  %   {WA, Australia} % Location
-  %   {2004 - 2009} % Date(s)
-  %   {}
-
+  %   {A.Sc. in Computer Science} % Degree
+  %   {Orange Coast College} % Institution
+  %   {Costa Mesa, CA} % Location
+  %   {May, 2018 - May, 2020} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) bullet points
+  %       \item {CS GPA: 4:00}
+  %       \item {Cumulative GPA: 3.85}
+  %     \end{cvitems}
+  %   }
 %---------------------------------------------------------
 \end{cventries}

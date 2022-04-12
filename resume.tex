@@ -17,7 +17,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{derwent-cv}
+\documentclass[12pt, a4paper]{derwent-cv}
 \usepackage{svg}
 
 % Configure page margins with geometry
@@ -30,7 +30,7 @@
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 % \colorlet{awesome}{awesome-red}
-\colorlet{awesome}{awesome-concrete-purple}
+\colorlet{awesome}{awesome-skyblue}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -60,17 +60,17 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./profile}
-\dername{Peter}{Derwent}{McElhinney}
-\fullname{Derwent McElhinney}
-\position{Software Engineer \acvHeaderRoleSep Hardware Hacker \acvHeaderRoleSep InfoSec Enthusiast}
+\dername{Gia}{Thuan}{Vu}
+\fullname{Vu Gia Thuan}
+\position{Software Engineer \acvHeaderRoleSep Web Developer}
 
-\email{derwentx@gmail.com}
-\homepage{dev.laserphile.com}
-\github{derwentx}
-\linkedin{derwentx}
+\email{vugiathuan123@gmail.com}
+% \homepage{giathuan123.github.io}
+\github{giathuan123}
+\linkedin{Gia Thuan}{gia-thuan-18b30b192/}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-\twitter{@derwentx}
+\twitter{@thuanvugia}
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
@@ -83,13 +83,13 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makedercvheader[R]
+\makedercvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Derwent McElhinney~~~·~~~Résumé}
+  {Vu Gia Thuan~~~·~~~Résumé}
   {\thepage}
 
 
@@ -100,14 +100,6 @@
 \input{include/summary.tex}
 \input{include/technologies.tex}
 \input{include/education.tex}
-\input{include/experience.tex}
-\input{include/honors.tex}
-% \input{include/presentation.tex}
-% \input{include/writing.tex}
-% \input{include/committees.tex}
-\input{include/extracurricular.tex}
-\input{include/referees.tex}
-
-
+\input{include/personalprojects.tex}
 %-------------------------------------------------------------------------------
 \end{document}
