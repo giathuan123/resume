@@ -17,7 +17,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, a4paper]{derwent-cv}
+\documentclass[12pt, letterpaper]{derwent-cv}
 \usepackage{svg}
 
 % Configure page margins with geometry
@@ -44,7 +44,7 @@
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
 \tcbset{
-  colback=awesome-skyblue
+  colback=awesome-skyblue,
   colframe=white
   }
 \newtcbox{\cbox}[1][awesome-skyblue]{
@@ -61,7 +61,8 @@
   left=2pt,
   right=2pt,
   top=1pt,
-  bottom=.5pt
+  bottom=.5pt,
+  height=14pt
   }
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -111,8 +112,8 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{include/summary.tex}
-\input{include/technologies.tex}
 \input{include/education.tex}
+\input{include/technologies.tex}
 \input{include/personalprojects.tex}
 %-------------------------------------------------------------------------------
 \end{document}
