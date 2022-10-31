@@ -170,7 +170,6 @@
 % Define a section for CV
 % Usage: \cvsectionIcon{<section-title>}{<icon>}
 \newcommand{\cvsectionIcon}[2]{%
-  \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
   \color{gray}\vhrulefill{0.9pt}
