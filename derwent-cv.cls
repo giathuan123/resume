@@ -1,4 +1,3 @@
-%% `awesome-cv-derwent.cls'.
 % Awesome CV Derwent Class File
 %
 % This class inherits from:
@@ -184,7 +183,7 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \multicolumn{2}{L{\textwidth}}{\entrytitlestyle{#1}} \\
-    \multicolumn{2}{L{\textwidth}}{$\>$ \paragraphstyle{#2}} \\
+    \multicolumn{2}{L{\textwidth}}{\paragraphstyle{#2}} \\
   \end{tabular*}%
 }
 

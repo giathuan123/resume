@@ -11,13 +11,22 @@
 \newfontfamily{\DI}{devicon}
 % Generic command displaying an icon by its name.
 \newcommand*{\devicon}[1]{{
-  \DI\csname devicon@#1\endcsname
-}}
-
-
+      \DI\csname devicon@#1\endcsname
+    }}
+% added after
+\expandafter\def\csname devicon@pytest-wordmark-original\endcsname { \symbol{"E90E}} \def\diPytestWordmark {{\DI\csname devicon@pytest-workmark-original\endcsname}}
+\expandafter\def\csname devicon@pytest-plain-original\endcsname { \symbol{"E916}} \def\diPytestPlain {{\DI\csname devicon@pytest-plain-original\endcsname}}
+\expandafter\def\csname devicon@pytorch-wordmark-original\endcsname { \symbol{"EA46}} \def\diPytorchWordmark {{\DI\csname devicon@pytorch-workmark-original\endcsname}}
+\expandafter\def\csname devicon@pytorch-plain-original\endcsname { \symbol{"EA47}} \def\diPytorchPlain {{\DI\csname devicon@pytorch-plain-original\endcsname}}
+\expandafter\def\csname devicon@graphql-wordmark-original\endcsname { \symbol{"E9A8}} \def\diGraphqlWordmark {{\DI\csname devicon@graphql-workmark-original\endcsname}}
+\expandafter\def\csname devicon@graphql-plain-original\endcsname { \symbol{"E9A9}} \def\diGraphqlPlain {{\DI\csname devicon@graphql-plain-original\endcsname}}
+\expandafter\def\csname devicon@sqlite-original\endcsname { \symbol{"EA31}} \def\diSqliteOriginal {{\DI\csname devicon@sqlite-original\endcsname}}
+\expandafter\def\csname devicon@sqlite-plain-original\endcsname { \symbol{"EA32}} \def\diSqlitePlainOriginal {{\DI\csname devicon@sqlite-plain-original\endcsname}}
 \expandafter\def\csname devicon@flask-original-wordmark\endcsname { \symbol{"E987}} \def\diFlaskOriginalWordmark {{\DI\csname devicon@flask-original-wordmark\endcsname}}
 \expandafter\def\csname devicon@flask-original\endcsname { \symbol{"E988}} \def\diFlaskOriginal {{\DI\csname devicon@flask-original\endcsname}}
 \expandafter\def\csname devicon@express-original-wordmark\endcsname { \symbol{"E9E3}} \def\diExpressOriginalWordmark {{\DI\csname devicon@express-original-wordmark\endcsname}}
+% added after
+
 \expandafter\def\csname devicon@express-original\endcsname { \symbol{"E9E4}} \def\diExpressOriginal {{\DI\csname devicon@express-original\endcsname}}
 \expandafter\def\csname devicon@devicon-plain-wordmark\endcsname { \symbol{"E93A}} \def\diDeviconPlainWordmark {{\DI\csname devicon@devicon-plain-wordmark\endcsname}}
 \expandafter\def\csname devicon@devicon-plain\endcsname { \symbol{"E93B}} \def\diDeviconPlain {{\DI\csname devicon@devicon-plain\endcsname}}
@@ -44,7 +53,7 @@
 \expandafter\def\csname devicon@slack-plain-wordmark\endcsname { \symbol{"E924}} \def\diSlackPlainWordmark {{\DI\csname devicon@slack-plain-wordmark\endcsname}}
 \expandafter\def\csname devicon@slack-plain\endcsname { \symbol{"E925}} \def\diSlackPlain {{\DI\csname devicon@slack-plain\endcsname}}
 \expandafter\def\csname devicon@facebook-plain\endcsname { \symbol{"E91C}} \def\diFacebookPlain {{\DI\csname devicon@facebook-plain\endcsname}}
-\expandafter\def\csname devicon@typescript-plain\endcsname { \symbol{"E920}} \def\diTypescriptPlain {{\DI\csname devicon@typescript-plain\endcsname}}
+\expandafter\def\csname devicon@typescript-plain\endcsname { \symbol{"E9FB}} \def\diTypescriptPlain {{\DI\csname devicon@typescript-plain\endcsname}}
 \expandafter\def\csname devicon@babel-plain\endcsname { \symbol{"E921}} \def\diBabelPlain {{\DI\csname devicon@babel-plain\endcsname}}
 \expandafter\def\csname devicon@mocha-plain\endcsname { \symbol{"E919}} \def\diMochaPlain {{\DI\csname devicon@mocha-plain\endcsname}}
 \expandafter\def\csname devicon@jasmine-plain-wordmark\endcsname { \symbol{"E91B}} \def\diJasminePlainWordmark {{\DI\csname devicon@jasmine-plain-wordmark\endcsname}}

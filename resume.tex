@@ -34,6 +34,7 @@
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
+%% `awesome-cv-derwent.cls'.
 % Colors for text
 % Uncomment if you would like to specify your own color
 % \definecolor{darktext}{HTML}{414141}
@@ -46,7 +47,7 @@
 \tcbset{
   colback=awesome-skyblue,
   colframe=white
-  }
+}
 \newtcbox{\cbox}[1][awesome-skyblue]{
   on line,
   arc=3pt,
@@ -54,7 +55,7 @@
   colframe=white,
   size=normal,
   before upper={
-    \rule[-3pt]{0pt}{10pt}
+      \rule[-3pt]{0pt}{10pt}
     },
   boxrule=1pt,
   boxsep=0pt,
@@ -63,7 +64,7 @@
   top=1pt,
   bottom=.5pt,
   height=14pt
-  }
+}
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
@@ -78,19 +79,18 @@
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
+%------------------------------------------------------------------k------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./profile}
 \dername{Gia}{Thuan}{Vu}
 \fullname{Vu Gia Thuan}
-\position{Software Engineer \acvHeaderRoleSep Web Developer}
+\position{Software Engineer \acvHeaderRoleSep Full-Stack Developer}
 
 \email{vugiathuan123@gmail.com}
 \github{giathuan123}
 \twitter{@thuanvugia}
 
 % \quote{``Be the change that you want to see in the world."}
-
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -102,10 +102,9 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Vu Gia Thuan~~~·~~~Résumé}
-  {\thepage}
-
+{\today}
+{Vu Gia Thuan~~~·~~~Résumé}
+{\thepage}
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
@@ -114,6 +113,7 @@
 \input{include/summary.tex}
 \input{include/education.tex}
 \input{include/technologies.tex}
+\input{include/workexperience.tex}
 \input{include/personalprojects.tex}
 %-------------------------------------------------------------------------------
 \end{document}
