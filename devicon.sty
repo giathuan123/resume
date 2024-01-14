@@ -6,9 +6,8 @@
 
 % Requirements to use.
 \usepackage{fontspec}
-
 % Define shortcut to load the Font Awesome font.
-\newfontfamily{\DI}{devicon}
+\newfontfamily{\DI}[Path=./fonts/]{devicon}
 % Generic command displaying an icon by its name.
 \newcommand*{\devicon}[1]{{
       \DI\csname devicon@#1\endcsname
