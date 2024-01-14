@@ -1,5 +1,5 @@
 resume: resume.tex
-	lualatex $<
+	lualatex --shell-escape $<
 
 coverletter: cover_letter.tex
 	lualatex $< hehe
