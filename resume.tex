@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex
+%!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
 %
@@ -17,11 +17,8 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, letterpaper]{derwent-cv}
+\documentclass[12pt, letterpaper, showframe]{derwent-cv}
 \usepackage{svg}
-
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 
@@ -84,11 +81,9 @@
 \dername{Gia}{Thuan}{Vu}
 \fullname{Vu Gia Thuan}
 \position{Software Engineer \acvHeaderRoleSep Fullstack Engineer \acvHeaderRoleSep Machine Learning Enthusiast}
-
 \email{vugiathuan123@gmail.com}
 \github{giathuan123}
 \twitter{@thuanvugia}
-
 % \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
@@ -109,7 +104,8 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{include/summary.tex}
+% \input{include/summary.tex}
+\input{include/education.tex}
 \input{include/technologies.tex}
 \input{include/education.tex}
 \input{include/workexperience.tex}
