@@ -17,7 +17,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, letterpaper, showframe]{derwent-cv}
+\documentclass[12pt, letterpaper]{derwent-cv}
 \usepackage{svg}
 
 % Specify the location of the included fonts
@@ -69,7 +69,7 @@
 \newcommand{\acvSubItemSep}{\enskip\cdotp\enskip}
 
 \newcommand{\techbox}[2]{\cbox{#1 \space #2}}
-
+\newgeometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in, footskip=.5cm}
 % name stuff
 
 %-------------------------------------------------------------------------------
@@ -79,6 +79,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./profile}
 \dername{Gia}{Thuan}{Vu}
+\letterclosing{Sincerely,}
 \fullname{Vu Gia Thuan}
 \position{Software Engineer \acvHeaderRoleSep Fullstack Engineer \acvHeaderRoleSep Machine Learning Enthusiast}
 \email{vugiathuan123@gmail.com}
@@ -99,17 +100,14 @@
 {\today}
 {Vu Gia Thuan~~~·~~~Résumé}
 {\thepage}
-
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-% \input{include/summary.tex}
 \input{include/education.tex}
 \input{include/technologies.tex}
-\input{include/education.tex}
 \input{include/workexperience.tex}
-\input{include/personalprojects.tex}
-HEHE
+% \input{include/personalprojects.tex}
+\input{include/honors_awards.tex}
 %-------------------------------------------------------------------------------
 \end{document}
