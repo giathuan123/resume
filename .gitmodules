@@ -4,3 +4,5 @@
 [submodule "devicon"]
 	path = devicon
 	url = https://github.com/konpa/devicon/
+[submodule "Awesome-CV/"]
+	url = git@github.com:giathuan123/Awesome-CV.git
