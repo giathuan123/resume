@@ -21,7 +21,7 @@
 \documentclass[11pt, a4paper]{derwent-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\newgeometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -44,6 +44,10 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\newcommand{\acvHeaderRoleSep}{\enskip\cdotp\enskip}
+
+\newcommand{\acvSubItemSep}{\enskip\cdotp\enskip}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -51,16 +55,18 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[circle,noedge,left]{./examples/profile}
-\name{Thuan}{Vu}
-\position{Software Enigineer{\enskip\cdotp\enskip}Security Expert}
+\dername{Gia}{Thuan}{Vu}
+\position{Software Engineer \acvHeaderRoleSep Fullstack Engineer \acvHeaderRoleSep Machine Learning Enthusiast}
 \address{2663 Clarion Lane, Costa Mesa, CA 92626}
 
-\mobile{657-347-2623}
+% \mobile{657-347-2623}
 \email{vugiathuan123@gmail.com}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
+\email{vugiathuan123@gmail.com}
 \github{giathuan123}
-\linkedin{posquit0}
+\homepage{giathuan123.github.com}
+\linkedin{giathuanvu123}
+\twitter{@thuanvugia}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -93,7 +99,7 @@
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
+% \letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
@@ -101,13 +107,13 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makedercvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Cover Letter}
+  {Vu Gia Thuan~~~·~~~Cover Letter}
   {}
 
 % Print the title with above letter information
@@ -129,6 +135,6 @@ Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sag
 
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter information
-\makeletterclosing
+\makederletterclosing
 
 \end{document}

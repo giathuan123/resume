@@ -110,7 +110,7 @@
       {}%
       {%
         \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-        \href{https://www.linkedin.com/in/\@linkedUrl}{\faLinkedinSquare\acvHeaderIconSep\@linkedin}%
+        \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
       }%
       \ifthenelse{\isundefined{\@twitter}}%
       {}%
@@ -120,7 +120,7 @@
       }%
       \ifthenelse{\isundefined{\@skype}}%
       {}%
-      {%
+      {%new
         \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
         \faSkype\acvHeaderIconSep\@skype%
       }%
