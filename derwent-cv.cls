@@ -30,7 +30,6 @@
 \newcommand*{\dername}[3]{\def\@firstname{#1}\def\@middlename{#2}\def\@lastname{#3}}
 \newcommand*{\middlename}[1]{\def\@middlename{#1}}
 \newcommand*{\fullname}[1]{\def\@fullname{#1}}
-
 % Re-Define a header for CV
 % Usage: \makecvheader
 \newcommand*{\makedercvheader}[1][C]{%

@@ -1,5 +1,5 @@
-resume: resume.tex
-	lualatex --shell-escape $< && mv resume.pdf Gia-Thuan-Vu-Resume.pdf
+resume: Gia-Thuan-Resume.tex
+	lualatex --shell-escape $<
 
-coverletter: cover_letter.tex
+coverletter: Gia-Thuan-Cover-Letter.tex
 	lualatex $< hehe
