@@ -3,5 +3,5 @@
 ---
 
 - [x] add optensor to projects
-- [ ] add description and link to Kyhoa Web Application
-- [ ] add one more university project
+- [x] add description and link to Kyhoa Web Application
+- [x] add one more university project
