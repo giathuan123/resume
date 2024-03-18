@@ -154,7 +154,7 @@
 
 % % re Define an environment for cvitems(for cventry)
 \renewenvironment{cvitems}{%
-	\vspace{2.0mm}
+	\vspace{-4.0mm}
 	\begin{justify}
 		\begin{itemize}[leftmargin=1ex, nosep, noitemsep]
 			\setlength{\parskip}{0pt}
@@ -162,7 +162,17 @@
 			}{%
 		\end{itemize}
 	\end{justify}
-	\vspace{-3.0mm}
+	\vspace{-4.0mm}
+}
+
+\newenvironment{cvitemsdesc}{%
+	\begin{justify}
+		\begin{itemize}[leftmargin=1ex, nosep, noitemsep]
+			\setlength{\parskip}{0pt}
+			\renewcommand{\labelitemi}{\bullet}
+			}{%
+		\end{itemize}
+	\end{justify}
 }
 
 % Define a section for CV
