@@ -41,25 +41,25 @@
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
 \tcbset{
-  colback=awesome-skyblue,
-  colframe=white
+	colback=awesome-skyblue,
+	colframe=white
 }
 \newtcbox{\cbox}[1][awesome-skyblue]{
-  on line,
-  arc=3pt,
-  colback=#1!15!white,
-  colframe=white,
-  size=normal,
-  before upper={
-      \rule[-3pt]{0pt}{10pt}
-    },
-  boxrule=1pt,
-  boxsep=0pt,
-  left=2pt,
-  right=2pt,
-  top=1pt,
-  bottom=.5pt,
-  height=14pt
+	on line,
+	arc=3pt,
+	colback=#1!15!white,
+	colframe=white,
+	size=normal,
+	before upper={
+			\rule[-3pt]{0pt}{10pt}
+		},
+	boxrule=1pt,
+	boxsep=0pt,
+	left=2pt,
+	right=2pt,
+	top=1pt,
+	bottom=.5pt,
+	height=14pt
 }
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
