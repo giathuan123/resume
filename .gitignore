@@ -1,7 +1,6 @@
 *.aux
 *.log
 *.out
-*.pdf
 svg-inkscape/*
 *.fls
 *.gz
