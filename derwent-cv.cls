@@ -173,6 +173,7 @@
 			}{%
 		\end{itemize}
 	\end{justify}
+	\vspace{-2mm}
 }
 
 % Define a section for CV

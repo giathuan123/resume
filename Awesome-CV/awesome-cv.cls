@@ -627,7 +627,8 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
-	\vspace{\acvSectionTopSkip}
+	% \vspace{\acvSectionTopSkip}
+	\vspace{-2mm}
 	\sectionstyle{#1}
 	\phantomsection
 	\color{sectiondivider}\vhrulefill{0.9pt}
@@ -649,12 +650,13 @@
 	\paragraphstyle
 }{%
 	\par
-	\vspace{2mm}
+	% \vspace{1mm}
 }
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
-	\vspace{\acvSectionContentTopSkip}
+	% \vspace{\acvSectionContentTopSkip}
+	\vspace{-0.5mm}
 	\begin{center}
 		}{%
 	\end{center}
